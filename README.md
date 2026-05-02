@@ -1,12 +1,12 @@
-# ETL OpenWeather
+$$ ETL OpenWeather
 
 Proyecto "ETL" desarrollado en Python. Extrae datos del clima desde la API de OpenWeather, transforma la información relevante y la carga en una base de datos PostgreSQL.
 
-## Objetivo del proyecto
+$$ Objetivo del proyecto
 
 Construir un pipeline básico que permita recolectar, limpiar y almacenar datos climáticos para su posterior análisis mediante SQL.
 
-## Tecnologías utilizadas
+$$ Tecnologías utilizadas
 
 - Python
 - PostgreSQL
@@ -16,11 +16,11 @@ Construir un pipeline básico que permita recolectar, limpiar y almacenar datos 
 - psycopg2
 - python-dotenv
 
-## Arquitectura del proyecto
+$$ Arquitectura del proyecto
 
 OpenWeather API → Extract → Transform → Load → PostgreSQL
 
-## Estructura del proyecto
+$$ Estructura del proyecto
 
 ```plaintext
 etl-weather-project/
@@ -35,7 +35,7 @@ etl-weather-project/
 └── README.md
 
 
-## Flujo del ETL 
+$$ Flujo del ETL 
 1. extract
 Aqui se conecta a la API de OpenWeather y se obtienen los datos climáticos en un formato .JSON
 
@@ -46,12 +46,12 @@ Se seleccionan los campos relevantes que entrega el archivo .JSON y los conviert
 Carga los datos transformados a una tabla en pgadmin llamada weather_data. 
 
 
-## Variables de entorno
+$$ Variables de entorno
 El proyecto utiliza un archivo .env para manejar credenciales y configuraciones personales/sensibles.
 
 
 
-## Ejecución del proyecto
+$$ Ejecución del proyecto
 Instalar dependencias con el sgte comando en terminal: 
 
 pip install -r requirements.txt
